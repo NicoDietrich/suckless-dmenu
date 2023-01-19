@@ -11,9 +11,16 @@ static const char *fonts[] = {
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#F9FAF9", "#222D31" },
-	[SchemeSel] = { "#F9FAF9", "#16A085" },
-	[SchemeOut] = { "#000000", "#00ffff" },
+// Manjaro i3:
+	/* [SchemeNorm] = { "#F9FAF9", "#222D31" }, */
+	/* [SchemeSel] = { "#F9FAF9", "#16A085" }, */
+// Solarized light:
+    /* [SchemeNorm] = { "#657b83", "#fdf6e3" }, */
+    /* [SchemeSel] = { "#657b83", "#eee8d5"}, */
+// Solarized dark:
+    [SchemeNorm] = { "#839496", "#002b36" },
+    [SchemeSel] = { "#839496", "#073642"},
+    [SchemeOut] = { "#000000", "#00ffff" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 10;
